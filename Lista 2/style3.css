@@ -1,11 +1,23 @@
 .top {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin: 0;
 }
 
 .tabs {
     display: flex;
     flex-direction: row;
+    width: 60%;
     
+}
+
+.title {
+    margin: 12px;
+    font-size: 42px;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5 {
+    text-align: center;
+    margin-left: 10px;
 }
