@@ -1,0 +1,66 @@
+body {
+    background-color: rgba(212, 224, 102, 0.863);
+    margin: 0;
+}
+
+p, h2, h3, h4{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background-color: rgb(83, 83, 83);
+    width: 12vw;
+    height: 100vh;
+}
+
+.center {
+    background-color: rgba(212, 224, 102, 0.863);
+    width: 76vw;
+    height: 100vh;
+    margin-right: 20px;
+}
+
+.right {
+    background-color: rgb(83, 83, 83);
+    width: 12vw;
+    height: 100vh;
+
+}
+
+.name {
+    background-color: gray;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.red {
+    background-color: rgb(204, 121, 121);
+    width: 33%;
+    height: fit-content;
+}
+
+.blue {
+    background-color: rgb(122, 186, 206);
+    width: 33%;
+    height: fit-content;
+}
+
+.purple {
+    background-color: rgb(204, 156, 214);
+    width: 33%;
+    height: fit-content;
+}
