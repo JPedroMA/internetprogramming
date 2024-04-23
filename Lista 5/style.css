@@ -1,0 +1,42 @@
+div {
+    margin: 12px auto;
+}
+
+.fill, .switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bulb, .table1, .colors, .table2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .white-background {
+    background-color: white !important;
+}
+
+table2 tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
