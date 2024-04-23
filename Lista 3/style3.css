@@ -1,0 +1,210 @@
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: sidebar;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.table {
+    grid-area: table1;
+}
+
+.title {
+    grid-area: title;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'nav nav'
+        'sidebar title'
+        'sidebar header'
+        'sidebar item1'
+        'sidebar table1';
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>div {
+
+    padding: 20px 0;
+}
+
+.item1 {
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.item3 {
+    border-radius: 5px;
+    background-color: white;
+}
+
+.htext {
+    text-align: justify;
+    margin: 0 50px;
+}
+
+.b1 {
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    border: #2196F3;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.b2 {
+    margin-top: 20px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 5px;
+    padding: 6px;
+    border: #b1b1b1;
+    text-align: left;
+}
+
+.item2 {
+    border-radius: 5px;
+    width: 22vw;
+    background-color: lightgray;
+    height: fit-content;
+}
+
+.text {
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.text1 {
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.text3 {
+    margin-left: 6px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.it1 {
+    grid-area: i1;
+}
+
+.it2 {
+    grid-area: i2;
+}
+
+.it3 {
+    grid-area: i3;
+}
+
+.item3 {
+    display: grid;
+    grid-template-areas:
+        'i1 i2 i3';
+    gap: 10px;
+    padding: 10px;
+}
+
+p {
+    margin: 2px auto;
+}
+
+.text2 {
+    background-color: rgb(68, 68, 224);
+    color: white;
+}
+
+.a2 {
+    color: white;
+    margin-left: 12px;
+}
+
+.linha {
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.btext {
+    margin: 0 10px;
+    color: rgb(192, 192, 192);
+    font-weight: 700;
+}
+
+.put {
+    color: white;
+    background-color: lightgray;
+    border-radius: 8px;
+    
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgray;
+    margin: 0 0;
+    height: fit-content;
+}
+
+.subhead {
+    border: 2px solid;
+    width: 100%;
+    height: fit-content;
+    margin: 0 0;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.table table tr:nth-child(odd) {
+    background-color: white;
+}
+
+.table table tr {
+    padding-left: 6px;
+}

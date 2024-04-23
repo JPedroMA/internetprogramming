@@ -1,0 +1,124 @@
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.item6 {
+    grid-area: item6;
+}
+.item7 {
+    grid-area: item7;
+}
+
+.item8 {
+    grid-area: item8;
+}
+
+.title {
+    grid-area: title;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'title title title title'
+        'item1 item2 item3 item4'
+        'item5 item6 item7 item8'
+        'footer footer footer footer';
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>div {
+
+    padding: 20px 0;
+}
+
+.title {
+    text-align: center;
+    background-color: rgb(152, 172, 179);
+    height: 23vh;
+}
+
+h1, p {
+    margin-left: 12px;
+}
+
+.item1 {
+    background-color: rgb(250, 101, 101);
+    border-radius: 6px;
+    width: 23vw;
+    height: 23vh;
+}
+
+.item2 {
+    background-color: rgb(131, 255, 207);
+    border-radius: 6px;
+    width: 23vw;
+    height: 23vh;
+}
+
+.item3 {
+    background-color: rgb(159, 137, 255);
+    border-radius: 6px;
+    width: 23vw;
+    height: 23vh;
+}
+
+.item4 {
+    background-color: rgb(123, 86, 148);
+    border-radius: 6px;
+    width: 23vw;
+    height: 23vh;
+}
+
+.item5 {
+    background-color: rgb(224, 179, 95);
+    border-radius: 6px;
+    width: 23vw;
+    height: 23vh;
+}
+
+.item6 {
+    background-color: rgb(208, 97, 223);
+    border-radius: 6px;
+    width: 23vw;
+    height: 23vh;
+}
+
+.item7 {
+    background-color: rgb(105, 202, 202);
+    border-radius: 6px;
+    width: 23vw;
+    height: 23vh;
+}
+
+.item8 {
+    background-color: rgb(215, 224, 95);
+    border-radius: 6px;
+    width: 23vw;
+    height: 23vh;
+}
+
+.footer {
+    background-color: rgb(152, 172, 179);
+    height: 23vh;
+}

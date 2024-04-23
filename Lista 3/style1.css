@@ -1,0 +1,104 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: sidebar; }
+.item3 { grid-area: main; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'sidebar header header header'
+    'sidebar main main main';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  
+  padding: 20px 0;
+}
+
+.item1 {
+  border-radius: 5px;
+  background-color: lightgray;}
+
+.item3 {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.htext {
+  text-align: justify;
+  margin: 0 50px;
+}
+
+.b1 {
+  margin-top:20px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 12px;
+  border: #2196F3;
+  margin-left: 50px;
+  text-align: left; 
+}
+
+.b2 {
+  margin-top:20px;
+  background-color: rgb(199, 199, 199);
+  border-radius: 5px;
+  padding: 6px;
+  border: #b1b1b1;
+  text-align: left;
+}
+
+.item2 {
+  border-radius: 5px;
+  width: 22vw;
+  background-color: lightgray;
+  height: fit-content;
+}
+
+.text {
+  margin-left: 12px;
+  text-decoration: none;
+}
+
+.text1 {
+  margin-left: 12px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.it1 { grid-area: i1; }
+.it2 { grid-area: i2; }
+.it3 { grid-area: i3; }
+
+.item3 {
+  display: grid;
+  grid-template-areas:
+    'i1 i2 i3';
+  gap: 10px;
+  padding: 10px;
+}
+
+p {
+  margin: 2px auto;
+}
+
+.text2 {
+  background-color: rgb(68, 68, 224);
+  color: white;
+}
+
+.a2 {
+  color: white;
+  margin-left: 12px;
+}
+
+.linha {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
