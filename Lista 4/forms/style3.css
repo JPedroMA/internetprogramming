@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid rgb(47, 179, 91);
+    border-bottom: 5px solid rgb(47, 179, 91);
+    width: 500px;
+    margin: 0 auto; /* Centering the form horizontally */
+    padding: 0px; /* Adding padding for better visualization */
+}
+
+
+.input-box {
+    padding: 5px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    margin: 6px auto;
+}
+
+.input-box input,
+.l-input-box input,
+.l-input-box textarea.x {
+    height: 40px;
+    width: 300px;
+    padding: 8px;
+    border-radius: 1px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.l-input-box {
+    padding: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    margin-left: 94px;
+    margin-right: 94px;
+}
+
+.l-input-box textarea.x {
+    height: 130px;
+    width: 300px;
+    padding: 8px;
+    border-radius: 1px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+.btn1 {
+    text-align: center;
+    border-radius: 0px;
+    width: 314px;
+    height: 30px;
+    border: 1px solid rgb(45, 110, 45);
+    background-color: rgb(12, 138, 39);
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 94px;
+    margin-right: 94px;
+}
+
+.title {
+    position: relative;
+    top: 0px;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-left: 93px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-left: 96px;
+    color: rgb(92, 92, 92);
+}
+
+
+textarea {
+    width: 285px;
+    border-radius: 0px;
+    border: 0px solid #ccc;
+}

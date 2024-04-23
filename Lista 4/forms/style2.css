@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 4px solid purple;
+    width: 500px;
+    margin: 0 auto; /* Centering the form horizontally */
+    padding: 0px; /* Adding padding for better visualization */
+}
+
+
+.input-box, .input-box1, .input-box2 {
+    padding: 5px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+}
+
+.input-box input,
+.l-input-box input,
+.l-input-box textarea.x {
+    height: 40px;
+    width: 300px;
+    padding: 8px;
+    border-radius: 1px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input-box1 input {
+    height: 40px;
+    width: 296px;
+    padding: 8px;
+    border-radius: 1px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input-box2 input {
+    height: 40px;
+    width: 306px;
+    padding: 8px;
+    border-radius: 1px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+.l-input-box {
+    padding: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+}
+
+.l-input-box textarea.x {
+    height: 130px;
+    width: 316px;
+    padding: 8px;
+    border-radius: 1px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn1 {
+    text-align: center;
+    border-radius: 12px;
+    width: 130px;
+    height: 25px;
+    border: 1px solid purple;
+    background-color: blueviolet;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.title {
+    position: absolute;
+    top: 0px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.img {
+    top: 0px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 285px;
+    border-radius: 0px;
+    border: 0px solid #ccc;
+}
