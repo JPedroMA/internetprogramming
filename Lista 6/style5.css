@@ -79,3 +79,10 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.save {
+    margin-top: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
