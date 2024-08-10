@@ -1,0 +1,57 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #61dafb;
+    text-align: center;
+}
+
+#volume-control {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #1e2027;
+    border: 1px solid #61dafb;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#bonecos-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.boneco {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #61dafb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.boneco.estourado {
+    transform: scale(0);
+    opacity: 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #1e2027;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4fa3c3;
+}
