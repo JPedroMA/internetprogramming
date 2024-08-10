@@ -1,12 +1,14 @@
-// script.js
+
 
 const audio = document.getElementById('audio');
 const bonecosContainer = document.getElementById('bonecos-container');
 const resetButton = document.getElementById('reset-button');
+const startButton = document.getElementById('start-button');
+const volumeControl = document.getElementById('volume-control');
+const startScreen = document.getElementById('start-screen');
 
 let bonecos = [];
 
-// Função para criar um novo boneco
 function createBoneco() {
     const boneco = document.createElement('div');
     boneco.className = 'boneco';
@@ -19,8 +21,8 @@ function createBoneco() {
         setTimeout(() => {
             bonecosContainer.removeChild(boneco);
             bonecos = bonecos.filter(b => b !== boneco);
-            audio.volume = Math.max(audio.volume - 0.1, 0); // Reduz o volume
-        }, 300); // Tempo para o efeito de estourar
+            audio.volume = Math.random();
+        }, 300);
     });
 
     bonecosContainer.appendChild(boneco);
@@ -30,10 +32,10 @@ function createBoneco() {
     let posY = parseFloat(boneco.style.top);
 
     function moveBoneco() {
-        posX += 0.5; // Movimento mais devagar
-        posY += 0.25; // Movimento mais devagar
-        if (posX > 100) posX = -5; // Recomeçar do lado esquerdo
-        if (posY > 100) posY = -5; // Recomeçar do topo
+        posX += 0.5;
+        posY += 0.25;
+        if (posX > 100) posX = -5;
+        if (posY > 100) posY = -5;
 
         boneco.style.left = posX + '%';
         boneco.style.top = posY + '%';
@@ -44,23 +46,24 @@ function createBoneco() {
     moveBoneco();
 }
 
-// Função para reiniciar o estado
 function reset() {
-    // Remover todos os bonecos existentes
     bonecos.forEach(boneco => bonecosContainer.removeChild(boneco));
     bonecos = [];
 
-    // Resetar o volume do áudio
-    audio.volume = 1; // Volume máximo
+    audio.volume = 1;
 
-    // Recriar os bonecos
     for (let i = 0; i < 10; i++) {
         createBoneco();
     }
 }
 
-// Adicionar eventos
+function startGame() {
+    startScreen.style.display = 'none'; 
+    volumeControl.style.display = 'block'; 
+    audio.play(); 
+}
+
+startButton.addEventListener('click', startGame);
 resetButton.addEventListener('click', reset);
 
-// Inicializar bonecos
 reset();
